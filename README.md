@@ -1,3 +1,2 @@
-# firebaseStudy
+# firebaseStudy CRUD 공부중!
 
-CRUD 공부하는 중!
