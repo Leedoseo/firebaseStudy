@@ -14,11 +14,11 @@
 		C29FCFEC2C905E5400F8951D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C29FCFEB2C905E5400F8951D /* Base */; };
 		C29FCFF52C905EB800F8951D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C29FCFF42C905EB800F8951D /* FirebaseFirestore */; };
 		C29FCFF72C905EB800F8951D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C29FCFF62C905EB800F8951D /* FirebaseStorage */; };
-		C29FCFF92C90600000F8951D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C29FCFF82C90600000F8951D /* GoogleService-Info.plist */; };
 		C29FCFFC2C90668200F8951D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C29FCFFB2C90668200F8951D /* SnapKit */; };
 		C29FD0012C90670800F8951D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FD0002C90670800F8951D /* Model.swift */; };
 		C29FD0032C90671300F8951D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FD0022C90671300F8951D /* SignUpViewModel.swift */; };
 		C29FD0062C90687800F8951D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C29FD0052C90687800F8951D /* FirebaseAuth */; };
+		C29FD0082C92D55800F8951D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C29FD0072C92D55800F8951D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		C29FCFE82C905E5400F8951D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C29FCFEB2C905E5400F8951D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C29FCFED2C905E5400F8951D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C29FCFF82C90600000F8951D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C29FD0002C90670800F8951D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C29FD0022C90671300F8951D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C29FD0072C92D55800F8951D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				C29FCFEA2C905E5400F8951D /* LaunchScreen.storyboard */,
 				C29FCFE82C905E5400F8951D /* Assets.xcassets */,
 				C29FCFED2C905E5400F8951D /* Info.plist */,
-				C29FCFF82C90600000F8951D /* GoogleService-Info.plist */,
+				C29FD0072C92D55800F8951D /* GoogleService-Info.plist */,
 			);
 			path = "5. firebaseStudy";
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29FCFE92C905E5400F8951D /* Assets.xcassets in Resources */,
-				C29FCFF92C90600000F8951D /* GoogleService-Info.plist in Resources */,
+				C29FD0082C92D55800F8951D /* GoogleService-Info.plist in Resources */,
 				C29FCFEC2C905E5400F8951D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
