@@ -1,24 +1,26 @@
 import Foundation
 
-import FirebaseAuth
 import FirebaseFirestore
 
 class SignUpViewModel {
 
-    var errorMessage: String?
-    var isSignUpSuccessful: ((Bool) -> Void)?
-    let db = Firestore.firestore()
+//    var errorMessage: String? -> 회원가입 중 오류 메세지를 저장하기 위한 문자열 옵셔널 변수임. 현재 오류메세지가 없어서 사용하지 않는중
+    var isSignUpSuccessful: ((Bool) -> Void)? // 회원가입 성공 여부를 뷰컨에 전달하기 위한 콜백. 회원가입이 성공or실패 여부를 알기위해 bool값을 전달
+    let db = Firestore.firestore() // Firebase 데이터베이스 객체, Firestore에 접근할 때 사용
     
  
-    func signUp(email: String, password: String) {
-        db.collection("Users").document(email).setData([
+    func signUp(email: String, password: String, nickname: String) { // 실제 회원가입을 처리하는 로직. 이메일, 비번, 닉네임을 Firestore에 저장함.
+        db.collection("Users").document(email).setData([ // Firestore의 Users 컬렉션에 접근하여, 사용자의 이메일을 문서 ID로 지정. 이 문서에 이메일, 비밀번호, 닉네임 데이터를 저장함
             "email": email,
-            "password": password // 왼쪽의 key값은 필드의 이름 오른쪽이 실제 저장이 될 값 value
+            "password": password,
+            "nickname": nickname // 왼쪽의 key값은 필드의 이름 오른쪽이 실제 저장이 될 값 value
         ]) { error in
             if let error = error {
                 print("Error saving user data: \(error)")
+                self.isSignUpSuccessful?(false)
             } else {
                 print("User data saved successfully.")
+                self.isSignUpSuccessful?(true)
             }
         }
         // db에있는 "Users"라는 컬렉션에 접근, document는 각자의 객체로 회원가입 할떄마다 새로운 document가 생성되며 그 안에 정보가 들어감.
