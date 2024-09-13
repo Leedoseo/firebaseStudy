@@ -76,7 +76,7 @@ class SignUpViewController: UIViewController {
     }
     
     @objc private func buttonAction() {
-        // email, password가 비어있을 때 비어있다고 알림.
+        // email, password, nickname이 비어있을 때 비어있다고 알림.
         guard let email = emailTextField.text, !email.isEmpty,
               let password = passwordTextField.text, !password.isEmpty,
               let nickname = nicknameTextField.text, !nickname.isEmpty else {

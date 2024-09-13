@@ -77,7 +77,6 @@ class LoginViewController: UIViewController {
                 let password = data?["password"] as? String ?? ""
                 let nickname = data?["nickname"] as? String ?? ""
                 
-                // 이메일과 비밀번호가 이미 Firestore에서 가져왔기 때문에 별도의 비교가 필요 없습니다.
                 DispatchQueue.main.async {
                     let mainVC = MainViewController()
                     mainVC.configure(email: email, password: password, nickname: nickname)

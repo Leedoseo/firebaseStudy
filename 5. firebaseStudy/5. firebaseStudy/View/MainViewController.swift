@@ -52,7 +52,6 @@ class MainViewController: UIViewController {
     
     // 버튼 액션: EditViewController로 이동
     @objc private func editButtonTapped() {
-        // 이메일에서 "Email: " 제거하여 전달
         let email = emailLabel.text ?? ""
         print("전달된 이메일: \(email)")  // 이메일 출력해서 확인
         
